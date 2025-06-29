@@ -34,10 +34,14 @@
 }
 
 .nota-header img {
-  width: 350px;   /* ubah sesuai selera */
+  width: 80px;    /* atau kecilin jadi 60px kalau masih kepotong */
   height: auto;
+  object-fit: contain;
 }
-
+.nota-header {
+  flex-wrap: wrap;   /* biar logo ga maksa sebelah info toko */
+}
+            
 .info-toko {
   /* biarin default, teks otomatis di kiri */
 }
