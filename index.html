@@ -1,251 +1,173 @@
-<html>
-    <head>
-        <title>Nota Butik Yuan Nita Fashion</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nota Butik</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #fffbe6, #f4b400);
+    }
 
-        <!--Style-->
-        <style>
-            body{
-                font-family: 'Segoe UI';
-                background: linear-gradient(135deg, #fcef3a, #e3e4d1);
-            }
-@media (max-width: 600px) {
-  .nota-header h2 {
-    font-size: 18px;
-  }
-  .nota-header p {
-    font-size: 14px;
-  }
-}
+    #nota {
+      background: white;
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid #f4b400;
+      box-sizing: border-box;
+    }
 
+    .nota-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
 
-#nota {
-  background: linear-gradient(135deg, #fffbe6, #f4b400);
-  padding: 20px;
-  border-radius: 20px;
-  border: 20px yellow;
-}
+    .nota-header img {
+      width: 80px;
+      height: auto;
+    }
 
-.nota-header {
-  display: flex;
-  justify-content: space-between; /* info kiri, logo kanan */
-  align-items: center;            /* sejajarkan vertikal */
-  margin-bottom: 10px;            /* jarak ke tabel bawah */
-}
+    .info-toko h2 {
+      margin: 0;
+      font-size: 20px;
+    }
 
-.nota-header img {
-  width: 350px;   /* ubah sesuai selera */
-  height: auto;
-}
+    .info-toko p {
+      margin: 2px 0;
+      font-size: 14px;
+    }
 
-.info-toko {
-  /* biarin default, teks otomatis di kiri */
-}
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      border: 2px solid #f4b400;
+      border-radius: 8px;
+      overflow: hidden;
+    }
 
+    th, td {
+      border: 1px solid #f4b400;
+      padding: 8px;
+      text-align: left;
+      font-size: 14px;
+    }
 
-#judul {
-    color: black;
-    text-align: center;
-}
+    #total {
+      text-align: right;
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
 
-#tombol {
-    text-align: center;
-    margin-top: 20px;
-}
+    .tombol-container {
+      text-align: center;
+      margin-top: 10px;
+    }
 
-button {
-    display: inline;
-    margin: 5px;
-    background-color: #ffffff;
-    border: none;
-    padding: 8px 16px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    margin: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    transition: background-color 0.3s;
-}
+    button {
+      background-color: #f4b400;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
 
-button:hover {
-    background-color: yellow;
-}
+    button:hover {
+      background-color: #dca600;
+    }
 
-table {
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-  border-collapse: separate;
-  border-spacing: 0;
-  border: 1px solid #ffffff;  /* frame luar tabel */
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-thead {
-  background-color: #f4b400; /* gold */
-  color: white;
-}
-
-th, td {
-  border: 1px solid #f0eee8; /* gold tipis */
-  padding: 8px 12px;
-  text-align: left;
-}
-
-tbody tr:hover {
-  background-color: #fff9e6; /* kuning pastel muda saat hover */
-}
-        </style>
-
-
-
-    </head>
-    <body>
-        <!--JUDUL-->
-        <div id="judul">
-        <h1>NOTA PEMBELIAN</h1>
-        </div>
-
-        <!--Logo Butik-->
-        <img>
-
-
-        <!--INFORMASI PEMBELI-->
-
-
-        <div id="nota">
-<div id="nota">
-  <div class="nota-header">
-    <div class="info-toko">
-      <h2>Yuan Nita Fashion</h2>
-      <p>Jl. Contoh No.123, Merauke</p>
-      <p>Telp: 0812-3456-7890</p>
+    @media (max-width: 600px) {
+      .nota-header h2 {
+        font-size: 18px;
+      }
+      .nota-header p {
+        font-size: 12px;
+      }
+      th, td {
+        font-size: 12px;
+        padding: 4px;
+      }
+      #total {
+        font-size: 14px;
+      }
+      button {
+        font-size: 12px;
+        padding: 6px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="nota">
+    <div class="nota-header">
+      <div class="info-toko">
+        <h2>Yuan Nita Fashion</h2>
+        <p>Jl. Contoh No.123, Merauke</p>
+        <p>Telp: 0812-3456-7890</p>
+      </div>
+      <img src="logo.png" alt="Logo Butik">
     </div>
-    <img src="image.png" alt="Logo">
-  </div>
-  
-  <!-- tabel & isi nota di bawahnya -->
-</div><br>
 
-  <table id="myTable" border="1">
-    <thead>
+    <table id="notaTable">
       <tr>
         <th>Nama Barang</th>
         <th>Jumlah</th>
         <th>Harga</th>
         <th>Total</th>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td contenteditable="true">Barang A</td>
-        <td contenteditable="true">2</td>
-        <td contenteditable="true">100</td>
-        <td>200</td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td></td>
       </tr>
-      <tr>
-        <td contenteditable="true">Barang B</td>
-        <td contenteditable="true">3</td>
-        <td contenteditable="true">150</td>
-        <td>450</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td colspan="3" style="text-align:right;"><strong>Total Semua:</strong></td>
-        <td id="grandTotal">0</td>
-      </tr>
-    </tfoot>
-  </table>
-</div>
+    </table>
 
-<br>
+    <div id="total">Total: Rp 0</div>
 
-<!--TOMBOL-->
-<div id="tombol">
-<button onclick="saveAsImage()">Simpan Sebagai Gambar</button>
-<button onclick="addRow()">Tambah Baris</button>
-<button onclick="hitungGrandTotal()">Hitung Total Semua</button>
-</div>
+    <div class="tombol-container">
+      <button onclick="tambahBaris()">Tambah Baris</button>
+      <button onclick="hitungTotal()">Hitung Total</button>
+    </div>
+  </div>
 
-<script>
-// update total per baris kalau ada perubahan
-document.querySelectorAll('#myTable tbody td[contenteditable="true"]').forEach(cell => {
-  cell.addEventListener('input', updateAllTotals);
-});
+  <script>
+    function tambahBaris() {
+      let table = document.getElementById("notaTable");
+      let row = table.insertRow(-1);
+      for (let i = 0; i < 4; i++) {
+        let cell = row.insertCell(i);
+        if (i < 3) {
+          cell.contentEditable = "true";
+        } else {
+          cell.innerHTML = "";
+        }
+      }
+    }
 
-function updateAllTotals() {
-  var table = document.getElementById("myTable");
-  var tbody = table.tBodies[0];
-
-  for (var i = 0; i < tbody.rows.length; i++) {
-    var row = tbody.rows[i];
-    var qty = parseInt(row.cells[1].textContent.trim()) || 0;   // Jumlah
-    var harga = parseInt(row.cells[2].textContent.trim()) || 0; // Harga
-    var total = qty * harga;
-    row.cells[3].textContent = total;
-  }
-}
-
-function hitungGrandTotal() {
-  var table = document.getElementById("myTable");
-  var total = 0;
-
-  // loop setiap baris tbody
-  for (var i = 0; i < table.tBodies[0].rows.length; i++) {
-    var row = table.tBodies[0].rows[i];
-    var value = parseInt(row.cells[3].textContent.trim()) || 0; // kolom Total
-    total += value;
-  }
-
-  document.getElementById("grandTotal").textContent = total;
-}
-
-function addRow() {
-  var table = document.getElementById("myTable");
-  var tbody = table.tBodies[0];
-  var newRow = tbody.insertRow();
-
-  // Nama Barang
-  var cell1 = newRow.insertCell(0);
-  cell1.contentEditable = "true";
-  cell1.textContent = "Barang Baru";
-
-  // Jumlah
-  var cell2 = newRow.insertCell(1);
-  cell2.contentEditable = "true";
-  cell2.textContent = "0";
-
-  // Harga
-  var cell3 = newRow.insertCell(2);
-  cell3.contentEditable = "true";
-  cell3.textContent = "0";
-
-  // Total
-  var cell4 = newRow.insertCell(3);
-  cell4.textContent = "0";
-
-  // Tambahkan listener biar otomatis hitung
-  [cell2, cell3].forEach(cell => {
-    cell.addEventListener('input', updateAllTotals);
-  });
-}
-</script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-<script>
-function saveAsImage() {
-  var element = document.getElementById("nota");
-  html2canvas(element).then(function(canvas) {
-    var link = document.createElement("a");
-    link.download = "nota.png";
-    link.href = canvas.toDataURL("image/png");
-    link.click();
-  });
-}
-</script>
-    </body>
-
+    function hitungTotal() {
+      let table = document.getElementById("notaTable");
+      let total = 0;
+      for (let i = 1; i < table.rows.length; i++) {
+        let jumlah = parseFloat(table.rows[i].cells[1].innerText) || 0;
+        let harga = parseFloat(table.rows[i].cells[2].innerText) || 0;
+        let subtotal = jumlah * harga;
+        table.rows[i].cells[3].innerText = subtotal ? "Rp " + subtotal : "";
+        total += subtotal;
+      }
+      document.getElementById("total").innerText = "Total: Rp " + total;
+    }
+  </script>
+</body>
 </html>
