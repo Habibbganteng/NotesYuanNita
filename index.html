@@ -51,8 +51,13 @@ text-align: center;
 }
 
 #Payment img {
-    width: 400px;
-    margin: auto;
+   #Payment img {
+  width: 80%;           /* gambar jadi max 80% lebar parent */
+  max-width: 400px;     /* di desktop tetep ga lebih gede dari 400px */
+  height: auto;
+  display: block;       /* supaya margin auto ngefek */
+  margin: 0 auto;
+}
 }
 
 #nota {
