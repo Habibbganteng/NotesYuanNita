@@ -27,23 +27,19 @@
 }
 
 .nota-header {
-  display: flex;
-  justify-content: space-between; /* info kiri, logo kanan */
-  align-items: center;            /* sejajarkan vertikal */
-  margin-bottom: 10px;            /* jarak ke tabel bawah */
+  text-align: center; /* biar logo di tengah */
+  margin-bottom: 10px;
 }
 
 .nota-header img {
-  width: 80px;    /* atau kecilin jadi 60px kalau masih kepotong */
+  width: 80px;   /* bisa gedein kalau mau */
   height: auto;
   object-fit: contain;
 }
-.nota-header {
-  flex-wrap: wrap;   /* biar logo ga maksa sebelah info toko */
-}
-            
+
 .info-toko {
-  /* biarin default, teks otomatis di kiri */
+  text-align: center; /* info toko juga tengah biar rapi */
+  margin-bottom: 10px;
 }
 
 
@@ -121,13 +117,13 @@ tbody tr:hover {
         <div id="nota">
 <div id="nota">
   <div class="nota-header">
-    <div class="info-toko">
-      <h2>Yuan Nita Fashion</h2>
-      <p>Jl. Contoh No.123, Merauke</p>
-      <p>Telp: 0812-3456-7890</p>
-    </div>
-    <img src="image.png" alt="Logo">
-  </div>
+  <img src="logo.png" alt="Logo Butik">
+</div>
+<div class="info-toko">
+  <h2>Yuan Nita Fashion</h2>
+  <p>Jl. Contoh No.123, Merauke</p>
+  <p>Telp: 0812-3456-7890</p>
+</div>
   
   <!-- tabel & isi nota di bawahnya -->
 </div><br>
